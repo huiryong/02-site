@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container,
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #f7600f;
+}
+h2 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: #f7600f;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ---------header--------- */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.header-container-nav ul {
+  display: flex;
+  padding: 10px 0;
+}
+.header-container-nav img {
+  width: 20px;
+  vertical-align: middle;
+}
+.header-container-nav a {
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.header-container-nav a:hover {
+  opacity: 0.6;
+}
+
+/* ---------main--------- */
+
+main img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+
+.main-container-about-content h3 {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.main-container-about-content-adress {
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+.main-container-about-content-text {
+  word-wrap: break-word;
+  line-height: 2;
+}
+
+.main-container-works img {
+  width: 30%;
+  height: 200px;
+}
+
+.main-container-works-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.main-container-news-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-container-news-content tr {
+  line-height: 3;
+}
+
+.main-container-news-content tr:first-child {
+  border-top: 1px solid #999;
+}
+.main-container-news-content th {
+  font-weight: normal;
+  border-bottom: 1px solid #999;
+  width: 14%;
+}
+
+.main-container-news-content td {
+  border-bottom: 1px solid #999;
+  padding-left: 30px;
+}
+
+.main-container-contact table {
+  width: 100%;
+}
+.main-container-contact th {
+  width: 16%;
+  text-align: left;
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.main-container-contact td input {
+  width: 100%;
+  line-height: 2;
+  border: #999 1px solid;
+}
+.main-container-contact td textarea {
+  width: 100%;
+  border: #999 1px solid;
+}
+
+.main-container-contact-form-submit {
+  text-align: center;
+  margin-top: 20px;
+}
+.main-container-contact-form-submit input {
+  width: 200px;
+  background-color: #f7600f;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+/* ----------footer----------- */
+
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* ----------------------------
+------------------------------
+---------------------------- */
+
+@media screen and (max-width: 600px) {
+  .header-container,
+  .main-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  /* ---------header--------- */
+
+  .header-container {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .header-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .header-container-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ---------main--------- */
+
+  main img {
+    height: 300px;
+  }
+
+  .main-container-works img {
+    width: 80%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .main-container-works-img {
+    display: block;
+    text-align: center;
+  }
+
+  .main-container-news-content th,
+  td {
+    display: block;
+  }
+
+  .main-container-news-content tr {
+    line-height: 2;
+  }
+  .main-container-news-content tr:first-child {
+    border-top: 1px solid #999;
+  }
+  .main-container-news-content th {
+    border-bottom: none;
+  }
+
+  .main-container-news-content th {
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  .main-container-news-content td {
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .main-container-contact th,
+  td {
+    display: block;
+  }
+
+  .main-container-contact th {
+    width: 100%;
+    text-align: left;
+    padding-left: 0px;
+    line-height: 2;
+  }
+
+  .main-container-contact td input {
+    width: 100%;
+    line-height: 2;
+  }
+
+  .main-container-contact td {
+    margin-top: 4px;
+  }
+  .main-container-contact-form-submit {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
